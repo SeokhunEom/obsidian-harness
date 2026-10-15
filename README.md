@@ -97,11 +97,13 @@ tests/               정책·통합·장애 주입 시험
 docs/                PRD·구현 대응표·업무 PC 검증
 ```
 
-저장소는 `node_modules`, 빌드/배포물, `.env`, 로컬 상태, 키를 Git에서 제외합니다. 원격 저장소는 아직 연결하지 않았습니다. 사용자가 정한 원격에 올리려면:
+저장소는 `node_modules`, 빌드/배포물, `.env`, 로컬 상태, 키를 Git에서 제외합니다. 원격 저장소는 [SeokhunEom/obsidian-harness](https://github.com/SeokhunEom/obsidian-harness)입니다. 다른 PC에서 소스를 받으려면:
 
 ```sh
-git remote add origin <사용자가-만든-저장소-URL>
-git push -u origin main
+git clone https://github.com/SeokhunEom/obsidian-harness.git
+cd obsidian-harness
+npm ci --ignore-scripts
+npm run package
 ```
 
 [검증 결과](docs/validation.md) · [PRD 요구사항 대응](docs/requirements.md) · [업무 PC 검증표](docs/workplace-validation.md) · [보안 경계](docs/security.md)
