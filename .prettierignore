@@ -1,0 +1,5 @@
+node_modules/
+dist/
+release/
+docs/PRD-v0.1.md
+package-lock.json

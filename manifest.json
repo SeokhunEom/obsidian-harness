@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-harness",
+  "name": "Obsidian Harness",
+  "version": "0.1.0",
+  "minAppVersion": "1.11.4",
+  "description": "Evidence search, daily work drafts, approval and local scheduling.",
+  "author": "Obsidian Harness contributors",
+  "isDesktopOnly": true
+}

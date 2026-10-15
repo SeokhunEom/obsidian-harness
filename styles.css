@@ -1,0 +1,76 @@
+.harness-view {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.harness-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.harness-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.harness-tabs button[aria-selected='true'] {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.harness-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+.harness-muted {
+  font-size: var(--font-smallest);
+  color: var(--text-muted);
+  white-space: pre-wrap;
+}
+.harness-warning {
+  padding: 10px;
+  border-left: 3px solid var(--text-warning);
+  background: var(--background-secondary);
+  white-space: pre-wrap;
+}
+.harness-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 8px 0;
+}
+.harness-view textarea,
+.harness-full {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+}
+.harness-view input[type='text'] {
+  width: 100%;
+}
+.harness-output {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: var(--font-text-size);
+}
+.harness-diff {
+  white-space: pre-wrap;
+  max-height: 320px;
+  overflow: auto;
+  background: var(--background-secondary);
+  padding: 8px;
+  font-size: var(--font-smaller);
+}
+.harness-settings textarea {
+  min-width: 270px;
+  min-height: 70px;
+}
+.harness-settings h3 {
+  margin-top: 28px;
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: 14px;
+}
